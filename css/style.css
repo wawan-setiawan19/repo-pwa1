@@ -2,28 +2,33 @@ body {
     background-color: #15141f;
     background-image: url("../img/bg.jpg");
     color: #fff;
+    overflow-y: hidden;
 }
 
 nav {
     box-shadow: none;
 }
 
+.brand-logo img {
+    height: 30px;
+}
+
 .sidenav {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-    background-color: rgb(21, 20, 31);
+    background-color: hsl(245, 22%, 10%);
 }
 
 .sidenav li > a {
     color: #fff;
 }
 
-.box{
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card{
+.card {
     margin-top: 30px;
     background-color: rgb(21, 20, 31);
     height: auto;
@@ -32,6 +37,73 @@ nav {
     border-radius: 20px;
 }
 
-.card-title{
+.card-title {
     text-align: center;
+}
+
+.card-image {
+    position: relative;
+    width: 15vw;
+    top: 10%;
+    margin-left: 30%;
+}
+
+.card-image img {
+    clip-path: circle();
+}
+
+.card .card-image img{
+    left: 25px;
+}
+
+table {
+    margin-left: 10px;
+}
+
+.wrap {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 94vh;
+}
+
+.slider {
+    font-family: sans-serif;
+    scroll-snap-type: x mandatory;  
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+}
+
+section {
+    padding: 1rem;
+    min-width: 90vw;
+    height: 60vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+section>img{
+    width: 100%;
+}
+
+h1  {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#9c27b0;
+    font-weight: bolder;
+    text-shadow: 0 0 20px #9c27b0;
+    width: 100%;
+    left: 0;
+    font-size: calc(2rem + 3vw);
+}
+
+h4{
+    display: none;
+}
+
+.not-found{
+    width: 100%;
 }

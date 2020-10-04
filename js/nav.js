@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if(xhr.status==200){
                     content.innerHTML = xhr.responseText;
                 }else if(xhr.status==404){
-                    content.innerHTML = `<p>Halaman tidak ada</p>`;
+                    content.innerHTML = `<img class="not-found" src="../img/404.png" alt="" srcset="">`;
                 }else{
                     content.innerHTML = `<p>Halaman tidak dapat diakses</p>`;
                 }
@@ -66,4 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         xhr.open("GET",`pages/${page}.html`,true);
         xhr.send();
     }
+
+    var elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems);
 });

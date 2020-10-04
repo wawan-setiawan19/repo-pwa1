@@ -1,0 +1,111 @@
+@media screen and (min-width:700px){
+    .slider {
+        font-family: sans-serif;
+        scroll-snap-type: x mandatory;  
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+    }
+    
+    section {
+        padding: 1rem;
+        min-width: 90vw;
+        height: 130vh;
+        scroll-snap-align: start;
+        text-align: center;
+        position: relative;
+    }
+
+    section>img{
+        width: 50%;
+    }
+    
+    h1  {
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:#9c27b0;
+        font-weight: bolder;
+        text-shadow: 0 0 20px #9c27b0;
+        width: 100%;
+        left: 0;
+        font-size: calc(2rem + 3vw);
+    }
+
+    .card .card-image img{
+        left: 45px;
+    }
+}
+
+@media screen and (min-width:1020px){
+    .wrap{
+        width: 100vw;
+        top: 20%;
+    }
+
+    .wrap>.row{
+        position: absolute;
+        left:15%;
+    }
+
+    .brand-logo>img{
+        margin-top: 20px;
+        height: 70px;
+    }
+
+    nav ul li a{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
+
+    .slider {
+        margin-top: 20%;
+        margin-left: 5%;
+        font-family: sans-serif;
+        scroll-snap-type: x mandatory;  
+        display: flex;
+        -webkit-overflow-scrolling: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100vh;
+        clip-path: circle(35vw at 50% 20%);
+    }
+    section {
+        padding: 1rem;
+        min-width: 20vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        text-align: center;
+        position: relative;
+    }
+    h1  {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        width: 100%;
+        left: 0;
+        font-size: calc(1rem + 3vw);
+    }
+
+    h4{
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .card{
+        margin-top: 10px;
+    }
+
+    .card-image{
+        margin-left: 25%;
+        margin-bottom: -10%;
+    }
+}

@@ -6,6 +6,10 @@
         <title>One Space</title>
         <link rel="stylesheet" href="css/materialize.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#000"/>
     </head>
 
     <body>
@@ -13,7 +17,7 @@
 
         <nav class="transparent">
             <div class="nav-wrapper container">
-                <a href="#!" class="brand-logo">One Space</a>
+                <a href="#!" class="brand-logo"><img src="/img/logo-brand.png" alt=""></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"
                     ><i class="material-icons">☰</i></a
                 >
@@ -28,6 +32,7 @@
 
         <script src="js/materialize.min.js"></script>
         <script src="js/nav.js"></script>
+
         <script>
             // REGISTER SERVICE WORKER
             if ("serviceWorker" in navigator) {
