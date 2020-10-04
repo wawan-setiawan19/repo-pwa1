@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Space</title>
+        <link rel="stylesheet" href="css/materialize.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Commerce</title>
-    <link rel="stylesheet" href="css/materialize.min.css">
-</head>
+    <body>
+        <!-- Navigasi -->
 
-<body>
+        <nav class="transparent">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">One Space</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+                    ><i class="material-icons">☰</i></a
+                >
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="mobile-demo"></ul>
+            </div>
+        </nav>
+        <!-- Akhir Navigasi -->
 
-    <script src="js/materialize.min.js"></script>
-</body>
+        <!-- Body Content -->
+        <div class="container" id="body-content"></div>
 
+        <script src="js/materialize.min.js"></script>
+        <script src="js/nav.js"></script>
+        <script>
+            // REGISTER SERVICE WORKER
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker
+                        .register("/service-worker.js")
+                        .then(function () {
+                            console.log("Pendaftaran ServiceWorker berhasil");
+                        })
+                        .catch(function () {
+                            console.log("Pendaftaran ServiceWorker gagal");
+                        });
+                });
+            } else {
+                console.log("ServiceWorker belum didukung browser ini.");
+            }
+        </script>
+    </body>
 </html>
