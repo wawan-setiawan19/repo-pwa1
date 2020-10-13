@@ -1,5 +1,6 @@
-const CACHE_NAME = "onespace-v1.03";
+const CACHE_NAME = "onespace-v1.04";
 const urlsToCache=[
+    "/",
     "/css/materialize.min.css",
     "/css/style.css",
     "/css/responsive.css",
@@ -8,6 +9,7 @@ const urlsToCache=[
     "/img/card-img.jpg",
     "/img/comet.png",
     "/img/earth.png",
+    "/img/icon-logo.png",
     "/img/jupiter.png",
     "/img/logo-brand.png",
     "/img/logo.png",
